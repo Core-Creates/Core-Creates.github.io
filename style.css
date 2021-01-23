@@ -1,0 +1,196 @@
+.content-box{
+    box-sizing: border-box;
+    flex-flow: row wrap;
+    flex-direction: row-reverse;
+    display:flow-root;
+}
+
+header{
+    display: border-box;
+    background-color: rgba(136, 248, 243, 0.527);
+    color: rgba(6, 10, 15, 0.479);
+    border-radius: 0px;
+    text-align: center;
+
+}
+ul{
+    list-style-type: none;
+    margin-top: 0px;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: 20px;
+}
+ul li{
+    --c: rgba(219, 255, 91, 0.699);
+    color: var(--c);
+    font-size: 16px;
+    font-family: monospace;
+    border: 2px solid var(--c);
+    border-radius: 0.5em;
+    background-color: none;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+
+
+}
+ul li span{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(100%);
+    border-radius: 1000px;
+    left: calc(20%);
+    transition: 1s;
+    /*transition-delay: calc((var(--b) - 0.2) * 0.1s); */
+    z-index: -200;
+}
+
+ul li span{
+    
+    border-radius: 50%;
+}
+ul li:hover {
+    color: black;
+}
+
+ul li:hover span{
+    transform:translateY(0) scale(2);
+}
+
+/* First bubble*/
+ul li span:nth-child(1) { 
+    --b: 1;
+    top: 0px;
+    left: -20px;
+}
+
+/* second bubble*/
+ul li span:nth-child(2) { 
+    
+    --b: 2;
+    top: 20px;
+    left: 42px;
+    
+    
+}
+
+/* third bubble*/
+ul li span:nth-child(3) { 
+    
+    --b: 3;
+    top: 10px;
+    left: 90px;
+    
+}
+
+/* Fourth bubble*/
+ul li span:nth-child(4) { 
+    
+    --b: 4;
+    top: 40px;
+    left: 140px;
+    
+}
+
+/* Fifth bubble*/
+ul li span:nth-child(5) { 
+    
+    --b: 5;
+    top: 60px;
+    left: 180px;
+    
+}
+
+/* Sixth bubble*/
+ul li span:nth-child(6) { 
+    
+    --b: 6;
+    animation-delay: 1s;
+    top:15px;
+    left: 149px;
+}
+
+ul li span:nth-child(7) { 
+    
+    --b: 3;
+    animation-delay: 0.5s;
+    top:50px;
+    left: 15px;
+}
+
+ul li span:nth-child(8) { 
+    
+    --b: 5;
+    animation-delay: 0.3s;
+    top:20px;
+    left: 200px;
+}
+
+
+
+
+body{
+    background-color: black;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    text-shadow: rgb(24, 24, 24) 100px;
+}
+h2{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-shadow: rgba(219, 255, 91, 0.699);
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(139, 250, 244, 0.637);
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border: 20px groove rgba(0, 128, 107, 0.671);
+    border-radius: 20px 50px;
+    
+}
+a{
+    
+}
+.linkArea{
+    padding-left: 20px;
+    font-weight: bold;
+    text-decoration: solid;
+}
+
+
+button{
+    border-radius: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    size: 50px;
+    font-size: 15px;
+    font-weight: bolder;
+    font-variant: normal;
+    color: rgba(76, 0, 130, 0.699);
+    background-color: rgb(22, 212, 171);
+    padding: 1%;
+    border: 5px solid;
+    border-color:rgba(0, 0, 0, 0.349);
+    text-align: center;
+}
