@@ -13,14 +13,14 @@ header{
     text-align: center;
 
 }
-ul{
+nav ul{
     list-style-type: none;
     margin-top: 0px;
     margin-left: 600px;
     margin-right: 600px;
     padding: 20px;
 }
-ul li{
+nav ul li{
     --c: rgba(219, 255, 91, 0.699);
     color: var(--c);
     font-size: 16px;
@@ -40,7 +40,7 @@ ul li{
 
 
 }
-ul li span{
+nav ul li span{
     position: absolute;
     width: 20%;
     height: 100%;
@@ -53,37 +53,36 @@ ul li span{
     z-index: -200;
 }
 
-ul li span{
+nav ul li span{
     
     border-radius: 50%;
 }
-ul li:hover {
+nav ul li:hover {
     color: black;
 }
 
-ul li:hover span{
+nav ul li:hover span{
     transform:translateY(0) scale(2);
 }
 
 /* First bubble*/
-ul li span:nth-child(1) { 
+nav ul li span:nth-child(1) { 
     --b: 1;
     top: 0px;
     left: -20px;
 }
 
 /* second bubble*/
-ul li span:nth-child(2) { 
+nav ul li span:nth-child(2) { 
     
     --b: 2;
     top: 20px;
     left: 42px;
     
-    
 }
 
 /* third bubble*/
-ul li span:nth-child(3) { 
+nav ul li span:nth-child(3) { 
     
     --b: 3;
     top: 10px;
@@ -92,7 +91,7 @@ ul li span:nth-child(3) {
 }
 
 /* Fourth bubble*/
-ul li span:nth-child(4) { 
+nav ul li span:nth-child(4) { 
     
     --b: 4;
     top: 40px;
@@ -101,7 +100,7 @@ ul li span:nth-child(4) {
 }
 
 /* Fifth bubble*/
-ul li span:nth-child(5) { 
+nav ul li span:nth-child(5) { 
     
     --b: 5;
     top: 60px;
@@ -110,7 +109,7 @@ ul li span:nth-child(5) {
 }
 
 /* Sixth bubble*/
-ul li span:nth-child(6) { 
+nav ul li span:nth-child(6) { 
     
     --b: 6;
     animation-delay: 1s;
@@ -118,7 +117,7 @@ ul li span:nth-child(6) {
     left: 149px;
 }
 
-ul li span:nth-child(7) { 
+nav ul li span:nth-child(7) { 
     
     --b: 3;
     animation-delay: 0.5s;
@@ -126,7 +125,7 @@ ul li span:nth-child(7) {
     left: 15px;
 }
 
-ul li span:nth-child(8) { 
+nav ul li span:nth-child(8) { 
     
     --b: 5;
     animation-delay: 0.3s;
