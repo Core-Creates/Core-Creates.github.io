@@ -1,8 +1,17 @@
-.content-box{
+.flex-container{
     box-sizing: border-box;
-    flex-flow: row wrap;
-    flex-direction: row-reverse;
+    display: flex;
+    /* flex-flow: row wrap; */
+    /* flex-direction: row; */
     display:flow-root;
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) 
+{
+    .flex-container 
+    {
+      flex-direction: column;
+    }
 }
 
 header{
@@ -52,6 +61,19 @@ nav ul li span{
     /*transition-delay: calc((var(--b) - 0.2) * 0.1s); */
     z-index: -200;
 }
+nav ul li button
+{
+    /* visibility: hidden; */
+
+    background-color: transparent;
+    width: 250px;
+    height: 20;
+    border: transparent;
+    box-shadow: transparent;
+    
+
+}
+
 
 nav ul li span{
     
@@ -59,6 +81,7 @@ nav ul li span{
 }
 nav ul li:hover {
     color: black;
+    
 }
 
 nav ul li:hover span{
@@ -162,24 +185,31 @@ p{
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
-img{
-    width: 200px;
-    height: 200px;
+
+.bioSec h2
+{
+    margin-left: 40px;
+}
+.bioSec img
+{
+
+    width: 400px;
+    height: 400px;
     border: 20px groove rgba(0, 128, 107, 0.671);
     border-radius: 20px 50px;
+    margin-left: 20px;
     
 }
-a{
-    
-}
-.linkArea{
+
+.linkArea
+{
     padding-left: 20px;
     font-weight: bold;
     text-decoration: solid;
 }
 
 
-button{
+.linkArea button{
     border-radius: 300px;
     font-family: 'Courier New', Courier, monospace;
     size: 50px;
