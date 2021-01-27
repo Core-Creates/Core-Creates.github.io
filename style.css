@@ -6,7 +6,7 @@
     display:flow-root;
 }
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) 
+@media (max-width: 400px) 
 {
     .flex-container 
     {
@@ -67,20 +67,41 @@ nav ul li button
 
     background-color: transparent;
     width: 250px;
-    height: 20;
+    height: 50px;
     border: transparent;
     box-shadow: transparent;
+    font-size: larger;
+    font-family: monospace;
+    color: var(--c);
     
 
 }
+nav ul li button:active
+{
+    background-color: rgba(136, 248, 243, 0.527);
+    width: 250px;
+    height: 50px;
+    /* border: transparent 0px;
+    box-shadow: transparent 0px; */
+    font-size: larger;
+    font-family: monospace;
+    color: black;
+    /* --c: black; */
 
+}
 
 nav ul li span{
     
     border-radius: 50%;
 }
 nav ul li:hover {
-    color: black;
+    font-family: monospace;
+    --c: black;
+    text-decoration-color: rgba(136, 248, 243, 0.527);
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
     
 }
 
