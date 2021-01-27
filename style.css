@@ -1,6 +1,6 @@
 .flex-container{
     box-sizing: border-box;
-    display: flex;
+    
     /* flex-flow: row wrap; */
     /* flex-direction: row; */
     display:flow-root;
@@ -18,10 +18,14 @@ header{
     display: border-box;
     background-color: rgba(136, 248, 243, 0.527);
     color: rgba(6, 10, 15, 0.479);
-    border-radius: 0px;
+    /* border-radius: 0px; */
     text-align: center;
 
 }
+#homeButton{
+    float: left;
+}
+
 header h1{
     font-weight: bolder;
 
@@ -204,7 +208,9 @@ h2{
 }
 p{
     font-family: 'Courier New', Courier, monospace;
+    -webkit-text-stroke-width: 2px white;
     color: rgba(139, 250, 244, 0.637);
+    
     font-size: 20px;
     padding-left: 40px;
     padding-top: 20px;
@@ -236,7 +242,7 @@ p{
 
 
 .linkArea button{
-    border-radius: 300px;
+    border-radius: 50px 250px 50px 50px  ;
     font-family: 'Courier New', Courier, monospace;
     size: 50px;
     font-size: 15px;
