@@ -33,7 +33,7 @@ nav ul li{
     --c: rgba(219, 255, 91, 0.699);
     color: var(--c);
     font-size: 16px;
-    font-family: monospace;
+    font-family:'Courier New', Courier, monospace;
     border: 2px solid var(--c);
     border-radius: 0.5em;
     background-color: none;
@@ -69,9 +69,7 @@ nav ul li button
     width: 250px;
     height: 50px;
     border: transparent;
-    box-shadow: transparent;
     font-size: larger;
-    font-family: monospace;
     color: var(--c);
     
 
@@ -79,13 +77,11 @@ nav ul li button
 nav ul li button:active
 {
     background-color: rgba(136, 248, 243, 0.527);
+    
     width: 250px;
     height: 50px;
-    /* border: transparent 0px;
-    box-shadow: transparent 0px; */
-    font-size: larger;
-    font-family: monospace;
-    color: black;
+    
+    color: rgba(219, 255, 91, 0.699);
     /* --c: black; */
 
 }
@@ -96,8 +92,12 @@ nav ul li span{
 }
 nav ul li:hover {
     font-family: monospace;
+    
     --c: black;
-    text-decoration-color: rgba(136, 248, 243, 0.527);
+
+    -webkit-text-stroke-width: 1px (219, 255, 91, 0.699);
+    -webkit-text-fill-color: rgba(219, 255, 91, 0.699);
+
     font-weight: bolder;
     letter-spacing: 0.1em;
     text-align: center;
@@ -107,6 +107,7 @@ nav ul li:hover {
 
 nav ul li:hover span{
     transform:translateY(0) scale(2);
+    transition-delay: 1ms;
 }
 
 /* First bubble*/
