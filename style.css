@@ -22,6 +22,10 @@ header{
     text-align: center;
 
 }
+header h1{
+    font-weight: bolder;
+
+}
 nav ul{
     list-style-type: none;
     margin-top: 0px;
