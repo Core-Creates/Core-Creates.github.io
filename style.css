@@ -28,6 +28,7 @@ header{
 
 header h1{
     font-weight: bolder;
+    text-align: center;
 
 }
 nav ul{
@@ -242,7 +243,7 @@ p{
 
 
 .linkArea button{
-    border-radius: 50px 250px 50px 50px  ;
+    border-radius: 50px 250px 250px 50px  ;
     font-family: 'Courier New', Courier, monospace;
     size: 50px;
     font-size: 15px;
