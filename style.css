@@ -5,14 +5,7 @@
     /* flex-direction: row; */
     display:flow-root;
 }
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 400px) 
-{
-    .flex-container 
-    {
-      flex-direction: column;
-    }
-}
+
 
 header{
     display: border-box;
@@ -22,9 +15,7 @@ header{
     text-align: center;
 
 }
-#homeButton{
-    float: left;
-}
+
 
 header h1{
     font-weight: bolder;
@@ -55,9 +46,19 @@ nav ul li{
     z-index: 1;
     transition: 0.5s;
     margin: 1em;
+    
+    
 
 
 }
+
+#aboutButton{
+    right: 0px;
+    left: 200px;
+    
+    
+}
+
 nav ul li span{
     position: absolute;
     width: 20%;
@@ -255,4 +256,22 @@ p{
     border: 5px solid;
     border-color:rgba(0, 0, 0, 0.349);
     text-align: center;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) 
+{
+    .flex-container 
+    {
+      flex-direction: column;
+    }
+    header h1{
+        float left;
+    }
+
+    header
+    {
+        right: 500px;
+
+    }
 }
