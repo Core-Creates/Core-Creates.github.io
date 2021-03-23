@@ -3,11 +3,11 @@
     
     /* flex-flow: row wrap; */
     /* flex-direction: row; */
-    display:flow-root;
+    display: flow-root;
 }
 
 
-header{
+Header{
     display: border-box;
     background-color: rgba(136, 248, 243, 0.527);
     color: rgba(6, 10, 15, 0.479);
@@ -60,7 +60,7 @@ nav ul li{
 }
 
 nav ul li span{
-    position: absolute;
+    position: relative;
     width: 20%;
     height: 100%;
     background-color: var(--c);
@@ -257,21 +257,105 @@ p{
     border-color:rgba(0, 0, 0, 0.349);
     text-align: center;
 }
+nav:disabled{
+    display: none;
+}
+nav:active{
+    display: block;
+}
+
+
+
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) 
+@media screen and (max-width: 750px) 
 {
-    .flex-container 
-    {
-      flex-direction: column;
-    }
+
     header h1{
-        float left;
+        float: left;
+        clear: both;
+        display:block;
+        width: 65%;
+    }
+    h2{
+        margin-left: 10px;
+    }
+    
+
+
+nav ul li{
+
+
+    position: relative;
+    text-align: left;
+    clear: both;
+    display:block;
+    left: -480px;
+    height: 40px;
+    margin-bottom: 3px;
+    }
+    Header{
+        
+        background-color: rgba(136, 248, 243, 0.527);
+        width: 160%;
+        text-align: center;
+    
+    }
+    
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media screen and (min-width: 760px) and (max-width: 800px) 
+{
+
+    
+    nav ul li{
+        right:400px;
+        width: 250px;
     }
 
-    header
-    {
-        right: 500px;
-
+    Header{
+        display: border-box;
+        background-color: rgba(136, 248, 243, 0.527);
+        color: rgba(6, 10, 15, 0.479);
+        /* border-radius: 0px; */
+        text-align: center;
+    
     }
+    p{
+        width: 90%;
+    }
+    
+
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media screen and (min-width: 820px) and (max-width: 900px) 
+{
+
+
+    h1{
+        width: 65%;
+    }
+    nav ul li{
+        align-items: center;
+        left: -520px;
+        width: 250px;
+    }
+    p{
+        width: 62%;
+    }
+
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media only screen and (max-width: 1400px) 
+{
+
+
+    nav ul li{
+        align-items: center;
+        right: 120px;
+        width: 250px;
+    }
+
 }
